@@ -3,7 +3,7 @@
 Сервис для **инференса** модели внутри Docker.
 Вход: `./input/test.csv`.  
 Выход: `./output/sample_submission.csv` + артефакты:
-- `feature_importances_top5.json` — топ-5 важностей фичей.
+- `feature_importances_top5.json` — топ-5 фичей.
 - `prediction_density.png` — плотность/распределение предсказаний.
 
 ## 1) Подготовка
