@@ -1,0 +1,20 @@
+paths:
+  raw_test_filename: "test.csv"
+  intermediate_test_parquet: "test.parquet"
+  preprocessed_features_parquet: "X.parquet"
+  predictions_csv: "predictions.csv"
+
+kaggle_submission:
+  id_column: "index"
+  submission_target_column: "prediction"
+  submission_columns: ["index", "prediction"]
+  binarize_threshold: 0.95
+
+model:
+  task_type: "classification"
+  use_predict_proba: true
+  proba_class_index: 1
+
+preprocess:
+  fillna_numeric_with: 0
+  use_only_numeric: false

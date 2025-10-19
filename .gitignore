@@ -1,0 +1,9 @@
+__pycache__/
+
+.venv/
+venv/
+
+.DS_Store
+catboost_info/
+_work/
+.vscode/
