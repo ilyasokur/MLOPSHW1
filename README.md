@@ -13,13 +13,9 @@
 3. Создание директорий mkdir input
 4. Положить test.csv в каталог input
 5. Build Docker - docker build --no-cache -t kaggle-ml-service:latest .
-```markdown
 6. Run Docker:
-
    ```bash
    docker run --rm -v $(pwd)/input:/mnt/input -v $(pwd)/output:/mnt/output kaggle-ml-service:latest
-   ```
-```
 ## 2) Результат
 
 1. В каталоге output - появиться ./output/sample_submission.csv + артефакты
