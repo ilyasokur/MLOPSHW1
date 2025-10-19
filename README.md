@@ -18,6 +18,8 @@
 
    ```bash
    docker run --rm -v $(pwd)/input:/mnt/input -v $(pwd)/output:/mnt/output kaggle-ml-service:latest
+   ```
+```
 ## 2) Результат
 
 1. В каталоге output - появиться ./output/sample_submission.csv + артефакты
