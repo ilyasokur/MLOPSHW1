@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS scores (
+  id BIGSERIAL PRIMARY KEY,
+  transaction_id TEXT NOT NULL,
+  score DOUBLE PRECISION NOT NULL,
+  fraud_flag INT NOT NULL,
+  ts TIMESTAMP WITHOUT TIME ZONE DEFAULT NOW()
+);
+CREATE INDEX IF NOT EXISTS idx_scores_fraud_ts ON scores (fraud_flag, ts DESC);
